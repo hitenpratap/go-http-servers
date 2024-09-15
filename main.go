@@ -9,7 +9,7 @@ import (
 
 func main() {
 	if len(os.Args) < 2 {
-		fmt.Println("Please provide a server type: nethttp | gin | echo")
+		fmt.Println("Please provide a server type: nethttp | gin | echo | fiber")
 		return
 	}
 
@@ -23,6 +23,6 @@ func main() {
 	case "fiber":
 		servers.StartFiberServer()
 	default:
-		fmt.Println("Unknown server type. Please use: nethttp | gin | echo")
+		fmt.Println("Unknown server type. Please use: nethttp | gin | echo | fiber")
 	}
 }
